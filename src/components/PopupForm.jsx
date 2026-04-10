@@ -8,6 +8,7 @@ const PopupForm = () => {
     name: "",
     email: "",
     phone: "",
+    message: "",
   });
 
   useEffect(() => {
@@ -71,6 +72,7 @@ const PopupForm = () => {
     dataString.append("name", formData.name);
     dataString.append("email", formData.email);
     dataString.append("phone", formData.phone);
+    dataString.append("message", formData.message);
     dataString.append("subject", "Popup Form Inquiry - UV Desizns");
 
     try {
@@ -82,7 +84,7 @@ const PopupForm = () => {
       
       if (data.success) {
         setStatus("success");
-        setFormData({ name: "", email: "", phone: "" });
+        setFormData({ name: "", email: "", phone: "", message: "" });
         setTimeout(() => {
           handleClose();
         }, 3000);
@@ -173,6 +175,16 @@ const PopupForm = () => {
                     required
                     placeholder="Mobile No."
                     className={inputClass}
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Your Message..."
+                    rows="3"
+                    className={`${inputClass} resize-none`}
                   />
                 </div>
 

@@ -1,112 +1,95 @@
-import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, Award, Users, Clock, Star } from "lucide-react";
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 30 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: "easeOut" },
-});
-
-const badges = [
-  { icon: Award, label: "Award Winning" },
-  { icon: Users, label: "100+ Clients" },
-  { icon: Clock, label: "10+ Years" },
-  { icon: Star, label: "5 Star Rated" },
-];
+import { motion } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
 
 export default function About() {
   const navigate = useNavigate();
 
+  const highlights = [
+    "Award-Winning Company",
+    "10+ Years Experience",
+    "3D Virtual Reality Tech",
+    "Luxury Interior Experts"
+  ];
+
   return (
-    <section className="py-24 bg-light overflow-hidden">
-      <div className="container-xl grid md:grid-cols-2 gap-16 items-center">
-
-        {/* LEFT — IMAGES */}
-        <motion.div
-          {...fadeUp(0.1)}
-          className="relative"
+    <section className="py-24 bg-gray-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        
+        {/* LEFT TEXT CONTENT */}
+        <motion.div 
+           initial={{ opacity: 0, x: -30 }} 
+           whileInView={{ opacity: 1, x: 0 }} 
+           viewport={{ once: true }}
+           transition={{ duration: 0.8 }}
+           className="max-w-xl"
         >
-          {/* Main Image */}
-          <div className="relative rounded-3xl overflow-hidden group">
-            <img
-              src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?auto=format&fit=crop&w=900&q=80"
-              alt="Luxury interior design"
-              loading="lazy"
-              className="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
-          </div>
+          <span className="uppercase tracking-widest text-[#0f2a3f] font-bold text-sm bg-blue-100/50 px-4 py-2 rounded-lg mb-6 inline-block">
+             About UV Desizns
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight mb-6">
+            Designing Premium Spaces with Excellence
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-5 text-lg">
+            UV Desizns Pvt Ltd is a premier interior design company with over a decade of experience crafting luxury spaces. We specialize in transforming ordinary rooms into extraordinary environments, perfectly tailored to your unique lifestyle.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+            Backed by our cutting-edge 3D Virtual Reality technology, our clients experience total transparency. You visualize every angle, texture, and finish of your dream space long before the first brick is laid.
+          </p>
 
-          {/* Floating Small Image */}
-          <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            className="absolute -bottom-8 -right-6 w-52 h-52 rounded-2xl overflow-hidden shadow-2xl border-4 border-white group"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=400&q=80"
-              alt="Interior detail"
-              loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-          </motion.div>
-
-          {/* Experience Badge */}
-          <div className="absolute -left-4 top-8 bg-secondary rounded-2xl px-6 py-5 shadow-gold">
-            <p className="text-4xl font-bold font-heading text-primary leading-none">10+</p>
-            <p className="text-primary/80 text-xs font-semibold mt-1 uppercase tracking-wider">Years of<br />Excellence</p>
-          </div>
-        </motion.div>
-
-        {/* RIGHT — CONTENT */}
-        <div className="space-y-8 pt-8 md:pt-0">
-          <motion.div {...fadeUp(0.2)}>
-            <span className="section-label">About Us</span>
-            <div className="gold-divider" />
-            <h2 className="section-heading mt-2">
-              Crafting Spaces That
-              <span className="text-gold-gradient italic"> Inspire</span>
-              <br />Everyday Living
-            </h2>
-          </motion.div>
-
-          <motion.div {...fadeUp(0.35)} className="space-y-4 text-gray-600 leading-relaxed">
-            <p>
-              At <strong className="text-primary">UV Desizns Pvt Ltd</strong>, we believe every space
-              tells a story. Our approach blends creativity, functionality, and modern design
-              principles to deliver environments that are not just beautiful — but deeply personal.
-            </p>
-            <p>
-              From concept to execution, we push boundaries with advanced 3D visualization,
-              sustainable materials, and meticulous attention to every detail, ensuring your vision
-              comes to life exactly as you imagined.
-            </p>
-          </motion.div>
-
-          {/* Badges */}
-          <motion.div {...fadeUp(0.45)} className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {badges.map(({ icon: Icon, label }, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl shadow-card border border-gray-100 hover:border-secondary/30 hover:shadow-gold transition-all duration-300"
-              >
-                <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center">
-                  <Icon size={18} className="text-secondary" />
-                </div>
-                <span className="text-xs font-semibold text-primary text-center">{label}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            {highlights.map((item, i) => (
+              <div key={i} className="flex items-center gap-3 text-gray-800 font-medium bg-white px-4 py-3 rounded-xl shadow-sm border border-gray-100">
+                <CheckCircle2 className="text-yellow-600 w-5 h-5 flex-shrink-0" />
+                <span className="text-sm">{item}</span>
               </div>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.div {...fadeUp(0.55)}>
-            <button onClick={() => navigate("/about")} className="btn-navy">
-              Discover Our Story <ArrowRight size={16} />
-            </button>
-          </motion.div>
-        </div>
+          <button
+            onClick={() => navigate("/about")}
+            className="bg-[#0f2a3f] text-white px-8 py-4 rounded-xl font-semibold hover:bg-yellow-600 hover:text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 block md:inline-block text-center w-full md:w-auto"
+          >
+            Explore Our Journey
+          </button>
+        </motion.div>
 
+        {/* RIGHT IMAGE COMPOSITION */}
+        <motion.div 
+           initial={{ opacity: 0, x: 30 }} 
+           whileInView={{ opacity: 1, x: 0 }} 
+           viewport={{ once: true }}
+           transition={{ duration: 0.8 }}
+           className="flex flex-col sm:flex-row gap-6 items-center justify-center relative w-full h-full"
+        >
+           {/* Image 1 */}
+           <img 
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" 
+              alt="Luxury Interior Living Room" 
+              className="w-full sm:w-1/2 h-[450px] object-cover rounded-3xl shadow-xl"
+           />
+           
+           {/* Image 2 & Floating Card Wrapper */}
+           <div className="w-full sm:w-1/2 flex flex-col gap-6 sm:mt-24">
+              <img 
+                 src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" 
+                 alt="Modern Decor Detail" 
+                 className="w-full h-[320px] object-cover rounded-3xl shadow-lg"
+              />
+              
+              {/* Floating Experience Card */}
+              <div className="bg-white rounded-2xl p-6 shadow-xl flex items-center gap-5 border-l-4 border-yellow-500">
+                 <div className="bg-gray-50 text-[#0f2a3f] p-4 rounded-full font-bold text-3xl font-serif">
+                   10+
+                 </div>
+                 <div>
+                    <p className="font-bold text-gray-900 text-lg">Years</p>
+                    <p className="text-gray-500 text-sm font-medium">Experience & Trust</p>
+                 </div>
+              </div>
+           </div>
+           
+        </motion.div>
       </div>
     </section>
   );
