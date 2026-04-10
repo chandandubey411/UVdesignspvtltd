@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f6f1;
+  color: #0c1f2e;
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0c1f2e; }
+::-webkit-scrollbar-thumb { background: #d4a843; border-radius: 3px; }
+
+/* ─── Utility Classes ─── */
+@layer components {
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 font-semibold px-7 py-3.5 rounded-full 
+           hover:bg-yellow-400 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+    background-color: #d4a843;
+    color: #0c1f2e;
+    box-shadow: 0 4px 30px rgba(212, 168, 67, 0.25);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 font-semibold px-7 py-3 rounded-full 
+           transition-all duration-300;
+    border-color: #d4a843;
+    color: #d4a843;
+  }
+  .btn-outline:hover {
+    background-color: #d4a843;
+    color: #0c1f2e;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center gap-2 text-white font-semibold px-7 py-3.5 rounded-full 
+           transition-all duration-300 hover:-translate-y-0.5;
+    background-color: #0c1f2e;
+  }
+  .btn-navy:hover {
+    background-color: #1a3a52;
+  }
+
+  .section-label {
+    @apply inline-block font-semibold text-sm uppercase tracking-[0.2em] mb-3;
+    color: #d4a843;
+  }
+
+  .section-heading {
+    @apply font-heading text-4xl md:text-5xl font-bold leading-tight;
+    color: #0c1f2e;
+  }
+
+  .section-heading-white {
+    @apply font-heading text-4xl md:text-5xl font-bold text-white leading-tight;
+  }
+
+  .card-base {
+    @apply bg-white rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+  }
+  .card-base:hover {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  }
+
+  .gold-bar {
+    @apply w-12 h-1 rounded-full;
+    background-color: #d4a843;
+  }
+
+  .input-field {
+    @apply w-full bg-transparent border-b-2 px-0 py-3 
+           outline-none transition-all duration-300
+           text-sm font-medium;
+    border-color: #d1d5db;
+    color: #0c1f2e;
+  }
+  .input-field:focus {
+    border-color: #d4a843;
+  }
+  .input-field::placeholder {
+    color: #9ca3af;
+  }
+
+  .page-hero {
+    @apply relative h-[400px] md:h-[500px] bg-cover bg-center flex items-center justify-center overflow-hidden;
+  }
+
+  .page-hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/90;
+  }
+
+  .container-xl {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* ─── Swiper Custom ─── */
+.swiper-pagination-bullet { background: #d4a843 !important; }
+.swiper-pagination-bullet-active { background: #d4a843 !important; width: 24px !important; border-radius: 4px !important; }
+
+/* ─── Hero Ken-Burns Background ─── */
+.hero-bg {
+  animation: zoomIn 10s ease-out forwards;
+}
+
+/* ─── Gradient Text ─── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #d4a843, #f5d07a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Gold Divider ─── */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4a843, #f5d07a, #d4a843);
+  border-radius: 2px;
+  margin: 16px 0;
+}
+
+/* ─── Gallery Masonry ─── */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 16px;
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid { column-count: 2; }
+}
+@media (max-width: 480px) {
+  .masonry-grid { column-count: 1; }
+}
+
+/* ─── Animated underline nav ─── */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4a843;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}

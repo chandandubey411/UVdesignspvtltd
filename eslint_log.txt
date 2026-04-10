@@ -1,0 +1,102 @@
+﻿
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\About.jsx
+   1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  90:34  error  'Icon' is defined but never used                                               no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Contact.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Features.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Hero.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Navbar.jsx
+  27:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  25 |   // Close mobile menu on route change
+  26 |   useEffect(() => {
+> 27 |     setMobileOpen(false);
+     |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |     setDropdown(false);
+  29 |   }, [location]);
+  30 |  react-hooks/set-state-in-effect
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Projects.jsx
+   5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       no-unused-vars
+  74:25  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+  72 |               1024: { slidesPerView: 3.2 },
+  73 |             }}
+> 74 |             navigation={{
+     |                         ^
+> 75 |               prevEl: prevRef.current,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |               nextEl: nextRef.current,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 77 |             }}
+     | ^^^^^^^^^^^^^^ Cannot access ref value during render
+  78 |             onInit={(swiper) => {
+  79 |               swiper.params.navigation.prevEl = prevRef.current;
+  80 |               swiper.params.navigation.nextEl = nextRef.current;  react-hooks/refs
+  75:23  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+  73 |             }}
+  74 |             navigation={{
+> 75 |               prevEl: prevRef.current,
+     |                       ^^^^^^^^^^^^^^^ Cannot access ref value during render
+  76 |               nextEl: nextRef.current,
+  77 |             }}
+  78 |             onInit={(swiper) => {                                                                                                                                                                                                                                                                                                           react-hooks/refs
+  76:23  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+  74 |             navigation={{
+  75 |               prevEl: prevRef.current,
+> 76 |               nextEl: nextRef.current,
+     |                       ^^^^^^^^^^^^^^^ Cannot access ref value during render
+  77 |             }}
+  78 |             onInit={(swiper) => {
+  79 |               swiper.params.navigation.prevEl = prevRef.current;                                                                                                                                                                                                                                                         react-hooks/refs
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Reviews.jsx
+  5:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Services.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Stats.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\components\Trusted.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\pages\AboutUs.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\pages\Blog.jsx
+  1:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\pages\ContactPage.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\pages\Gallery.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Chandan Dubey\Desktop\React\U V Desizns Pvt Ltd\src\pages\ServicePage.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Γ£û 19 problems (19 errors, 0 warnings)
+
