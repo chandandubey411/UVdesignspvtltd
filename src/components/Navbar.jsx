@@ -31,7 +31,7 @@ export default function Navbar() {
   }, [location]);
 
   const textColor = scrolled ? "text-primary" : "text-white";
-  const logoFilter = scrolled ? "mix-blend-multiply" : "grayscale invert brightness-200 mix-blend-screen";
+  const logoFilter = scrolled ? "mix-blend-multiply" : "grayscale invert mix-blend-screen";
 
   return (
     <>
@@ -191,7 +191,7 @@ export default function Navbar() {
         >
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <img src="/logo.png" alt="UV Desizns" className="h-9 grayscale invert brightness-200 mix-blend-screen" />
+            <img src="/logo.png" alt="UV Desizns" className="h-9 brightness-0 invert" />
             <button onClick={() => setMobileOpen(false)} className="text-white/60 hover:text-white">
               <X size={22} />
             </button>

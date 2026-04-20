@@ -19,10 +19,10 @@ export default function Footer() {
         {/* Brand */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="UV Desizns" className="h-10 grayscale invert brightness-200 mix-blend-screen" />
+            <img src="/logo.png" alt="UV Desizns" className="h-10 grayscale invert mix-blend-screen" />
           </div>
           <p className="text-white/60 text-sm leading-relaxed pr-6">
-            We are a premier interior design agency crafting inspiring spaces for modern living and corporate excellence. Over 10 years of trusted legacy.
+            We are a premier interior Desizn agency crafting inspiring spaces for modern living and corporate excellence. Over 10 years of trusted legacy.
           </p>
           <div className="flex gap-4">
             <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all shadow-lg"><Facebook size={18} /></a>
@@ -41,7 +41,7 @@ export default function Footer() {
           <ul className="space-y-3">
             <li><NavLink to="/" className="text-white/60 hover:text-secondary transition-colors text-sm">Home</NavLink></li>
             <li><NavLink to="/about" className="text-white/60 hover:text-secondary transition-colors text-sm">About Us</NavLink></li>
-            <li><NavLink to="/gallery" className="text-white/60 hover:text-secondary transition-colors text-sm">Design Gallery</NavLink></li>
+            <li><NavLink to="/gallery" className="text-white/60 hover:text-secondary transition-colors text-sm">Desizn Gallery</NavLink></li>
             <li><NavLink to="/blog" className="text-white/60 hover:text-secondary transition-colors text-sm">Latest News</NavLink></li>
             <li><NavLink to="/contact" className="text-white/60 hover:text-secondary transition-colors text-sm">Contact Us</NavLink></li>
           </ul>
@@ -56,7 +56,7 @@ export default function Footer() {
           <ul className="space-y-3">
             <li><NavLink to="/services/corporate-interiors" className="text-white/60 hover:text-secondary transition-colors text-sm">Corporate Interiors</NavLink></li>
             <li><NavLink to="/services/retail-interiors" className="text-white/60 hover:text-secondary transition-colors text-sm">Retail Spaces</NavLink></li>
-            <li><NavLink to="/services/commercial-interiors" className="text-white/60 hover:text-secondary transition-colors text-sm">Commercial Designs</NavLink></li>
+            <li><NavLink to="/services/commercial-interiors" className="text-white/60 hover:text-secondary transition-colors text-sm">Commercial Desizns</NavLink></li>
             <li><a href="#" className="text-white/60 hover:text-secondary transition-colors text-sm">Residential Planning</a></li>
             <li><a href="#" className="text-white/60 hover:text-secondary transition-colors text-sm">3D Visualization</a></li>
           </ul>
@@ -75,7 +75,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 text-sm text-white/60 group">
               <Phone size={18} className="text-secondary shrink-0 group-hover:scale-110 transition-transform" />
-              <a href="tel:+919557775259" className="hover:text-white transition-colors">+91 9557775259</a>
+              <a href="tel:+919557775259" className="hover:text-white transition-colors">+91 9557775259</a>, <a href="tel:+919354382176" className="hover:text-white transition-colors">+91 93543 82176</a>
             </li>
             <li className="flex gap-3 text-sm text-white/60 group">
               <Mail size={18} className="text-secondary shrink-0 group-hover:scale-110 transition-transform" />

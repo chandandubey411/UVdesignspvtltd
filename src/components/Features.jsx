@@ -4,13 +4,13 @@ import { MonitorPlay, Leaf, ShieldCheck, Clock, Activity, Layers } from "lucide-
 const features = [
   {
     icon: MonitorPlay,
-    title: "Immersive Design Tech",
+    title: "Immersive Desizn Tech",
     desc: "Experience your future space before it's built with 3D modeling and VR walkthroughs.",
   },
   {
     icon: Leaf,
     title: "Eco-Friendly Planning",
-    desc: "We integrate sustainable materials and energy-efficient designs into every project.",
+    desc: "We integrate sustainable materials and energy-efficient Desizns into every project.",
   },
   {
     icon: ShieldCheck,

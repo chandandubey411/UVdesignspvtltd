@@ -28,10 +28,10 @@ export default function About() {
              About UV Desizns
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight mb-6">
-            Designing Premium Spaces with Excellence
+            Desizning Premium Spaces with Excellence
           </h2>
           <p className="text-gray-600 leading-relaxed mb-5 text-lg">
-            UV Desizns Pvt Ltd is a premier interior design company with over a decade of experience crafting luxury spaces. We specialize in transforming ordinary rooms into extraordinary environments, perfectly tailored to your unique lifestyle.
+            UV Desizns Pvt Ltd is a premier interior Desizn company with over a decade of experience crafting luxury spaces. We specialize in transforming ordinary rooms into extraordinary environments, perfectly tailored to your unique lifestyle.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8 text-lg">
             Backed by our cutting-edge 3D Virtual Reality technology, our clients experience total transparency. You visualize every angle, texture, and finish of your dream space long before the first brick is laid.

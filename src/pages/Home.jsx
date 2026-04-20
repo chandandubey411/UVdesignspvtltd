@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Trusted from "../components/Trusted";
 import Services from "../components/Services";
 import Features from "../components/Features";
 import Stats from "../components/Stats";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Hero />
-      <Trusted />
       <About />
       <Services />
       <Features />

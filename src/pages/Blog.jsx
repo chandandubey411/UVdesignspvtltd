@@ -4,21 +4,21 @@ import { ArrowRight, Search, Calendar, ChevronRight } from "lucide-react";
 export default function Blog() {
   const blogs = [
     {
-      title: "6 Smart Ideas to Design Productive Co-working Spaces",
+      title: "6 Smart Ideas to Desizn Productive Co-working Spaces",
       date: "April 7, 2026",
       img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
       desc: "Modern co-working environments demand flexibility, creativity, and comfort. Discover ideas that help create inspiring and efficient shared spaces which boost focus and collaboration seamlessly.",
-      category: "Workspace Design"
+      category: "Workspace Desizn"
     },
     {
       title: "How Office Layout Impacts Employee Performance",
       date: "March 17, 2026",
       img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
-      desc: "A well-designed office can boost productivity and morale. Learn how layout, lighting, and materials affect work efficiency directly.",
+      desc: "A well-Desizned office can boost productivity and morale. Learn how layout, lighting, and materials affect work efficiency directly.",
       category: "Corporate Interiors"
     },
     {
-      title: "The Rise of Biophilic Design in Urban Homes",
+      title: "The Rise of Biophilic Desizn in Urban Homes",
       date: "February 22, 2026",
       img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
       desc: "Bringing nature indoors isn't just a trend. Explore how integrating natural elements into your living space can reduce stress and increase well-being.",
@@ -27,10 +27,10 @@ export default function Blog() {
   ];
 
   const categories = [
-    "Workspace Design",
+    "Workspace Desizn",
     "Residential Interiors",
     "Commercial Spaces",
-    "Design Trends",
+    "Desizn Trends",
     "Lighting & Ambience"
   ];
 
@@ -50,7 +50,7 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             className="section-heading-white mb-4"
           >
-            Design <span className="text-gold-gradient italic">Insights</span>
+            Desizn <span className="text-gold-gradient italic">Insights</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export default function Blog() {
             transition={{ delay: 0.2 }}
             className="text-white/80 max-w-2xl mx-auto text-lg"
           >
-            Stay updated with the latest trends, tips, and inspirations in interior design architecture.
+            Stay updated with the latest trends, tips, and inspirations in interior Desizn architecture.
           </motion.p>
         </div>
       </section>
@@ -185,7 +185,7 @@ export default function Blog() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-2xl" />
               <div className="relative z-10">
                 <h3 className="font-heading font-bold text-2xl text-white mb-2">Join Our Newsletter</h3>
-                <p className="text-white/70 text-sm mb-6 leading-relaxed">Get weekly updates on the finest interior design trends.</p>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed">Get weekly updates on the finest interior Desizn trends.</p>
                 <form className="relative group">
                   <input
                     type="email"

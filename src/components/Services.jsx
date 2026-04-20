@@ -5,21 +5,21 @@ import { ArrowRight, Building2, Store, Briefcase } from "lucide-react";
 const services = [
   {
     title: "Corporate Interiors",
-    desc: "We design professional workspaces that enhance productivity, reflect brand identity, and create a comfortable environment for your teams to thrive.",
+    desc: "We Desizn professional workspaces that enhance productivity, reflect brand identity, and create a comfortable environment for your teams to thrive.",
     img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
     icon: Building2,
     slug: "corporate-interiors",
   },
   {
     title: "Retail Interiors",
-    desc: "Our retail designs focus on customer experience, optimizing layout and aesthetics to attract, engage, and convert visitors into loyal customers.",
+    desc: "Our retail Desizns focus on customer experience, optimizing layout and aesthetics to attract, engage, and convert visitors into loyal customers.",
     img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
     icon: Store,
     slug: "retail-interiors",
   },
   {
     title: "Commercial Interiors",
-    desc: "We create functional and visually appealing commercial spaces that balance design, efficiency, and user comfort for long-term success.",
+    desc: "We create functional and visually appealing commercial spaces that balance Desizn, efficiency, and user comfort for long-term success.",
     img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",
     icon: Briefcase,
     slug: "commercial-interiors",

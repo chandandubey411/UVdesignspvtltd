@@ -133,7 +133,7 @@ const PopupForm = () => {
             {/* Header Content */}
             <div className="pt-10 pb-6 px-8 text-center border-b border-gray-200/50">
               <h3 className="text-2xl font-bold font-serif text-gray-900 tracking-tight">
-                Talk to Our Top Designers
+                Talk to Our Top Desizners
               </h3>
               <p className="text-gray-500 text-sm mt-3 leading-relaxed">
                 Schedule a consultation and let us transform your space into a masterpiece.

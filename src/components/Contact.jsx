@@ -43,7 +43,7 @@ export default function Contact() {
             >
               <span className="section-label">Get in Touch</span>
               <h2 className="text-3xl font-bold font-heading text-primary mb-2">Let's Discuss Your Project</h2>
-              <p className="text-gray-500 text-sm mb-8">Fill out the form below and our design consultants will get back to you within 24 hours.</p>
+              <p className="text-gray-500 text-sm mb-8">Fill out the form below and our Desizn consultants will get back to you within 24 hours.</p>
             </motion.div>
 
             <form onSubmit={handleSubmit} className="space-y-6 relative">
@@ -122,8 +122,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-white">Call Us</p>
-                      <a href="tel:+919557775259" className="text-white/60 text-sm mt-1 hover:text-secondary transition-colors">
+                      <a href="tel:+919557775259" className="text-white/60 text-sm mt-1 hover:text-secondary transition-colors truncate">
                         +91 9557775259
+                      </a>
+                      <a href="tel:+919354382176" className="text-white/60 text-sm mt-1 hover:text-secondary transition-colors truncate">
+                        +91 93543 82176
                       </a>
                     </div>
                   </div>

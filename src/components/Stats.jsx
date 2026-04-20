@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 
 const stats = [
   { num: 300, suffix: "+", label: "Projects Completed" },
-  { num: 100, suffix: "+", label: "Happy Clients" },
   { num: 10, suffix: "+", label: "Team Experts" },
   { num: 10, suffix: "+", label: "Years Experience" },
 ];

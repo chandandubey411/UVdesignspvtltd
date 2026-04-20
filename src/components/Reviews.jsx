@@ -20,7 +20,7 @@ export default function Reviews() {
       rating: 5,
     },
     {
-      text: "Highly professional and strictly on time! The 3D designs matched the final outcome 100%. Highly recommend them for commercial projects.",
+      text: "Highly professional and strictly on time! The 3D Desizns matched the final outcome 100%. Highly recommend them for commercial projects.",
       author: "Amit Patel",
       role: "Retail Chain Owner",
       rating: 5,
@@ -58,7 +58,7 @@ export default function Reviews() {
               transition={{ delay: 0.1 }}
               className="text-gray-600 mb-8 max-w-md leading-relaxed"
             >
-              Don't just take our word for it. See what our valued clients have to say about their experience working with our design experts.
+              Don't just take our word for it. See what our valued clients have to say about their experience working with our Desizn experts.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 10 }}

@@ -30,7 +30,7 @@ export default function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             className="section-heading-white mb-4"
           >
-            Design <span className="text-gold-gradient italic">Gallery</span>
+            Desizn <span className="text-gold-gradient italic">Gallery</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export default function Gallery() {
               >
                 <img
                   src={img}
-                  alt={`Design showcase ${i + 1}`}
+                  alt={`Desizn showcase ${i + 1}`}
                   loading="lazy"
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                 />

@@ -7,7 +7,7 @@ export default function AboutUs() {
     { icon: <Shield size={28} />, title: "Integrity", desc: "We operate with total transparency and honesty in every project phase." },
     { icon: <Users size={28} />, title: "Collaborative", desc: "Working hand-in-hand with clients to match their absolute vision." },
     { icon: <Clock size={28} />, title: "Reliable", desc: "On-time delivery without ever compromising on our premium quality." },
-    { icon: <Sparkles size={28} />, title: "Innovative", desc: "Leveraging 3D VR tech to modernize the interior design experience." },
+    { icon: <Sparkles size={28} />, title: "Innovative", desc: "Leveraging 3D VR tech to modernize the interior Desizn experience." },
     { icon: <ThumbsUp size={28} />, title: "Customer-Centric", desc: "Your satisfaction and peace of mind is our highest priority." },
     { icon: <Target size={28} />, title: "Efficient", desc: "Optimizing all workflows to ensure cost-effective luxury." },
   ];
@@ -16,7 +16,7 @@ export default function AboutUs() {
     { num: "300+", label: "Projects Completed" },
     { num: "100+", label: "Happy Clients" },
     { num: "10+", label: "Years Experience" },
-    { num: "10+", label: "Master Designers" },
+    { num: "10+", label: "Master Desizners" },
   ];
 
   return (
@@ -54,11 +54,11 @@ export default function AboutUs() {
            transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl font-serif font-bold text-[#0f2a3f] mb-6 leading-tight">
-            Interior Designers Transforming Spaces with Style
+            Interior Desizners Transforming Spaces with Style
           </h2>
 
           <p className="text-gray-600 mb-5 leading-relaxed text-lg">
-            <strong>UV Desizns Pvt Ltd</strong> is an award-winning interior design 
+            <strong>UV Desizns Pvt Ltd</strong> is an award-winning interior Desizn 
             company based in Delhi NCR, established in 2014. With over 
             <strong> 10+ years of experience</strong>, we have delivered extraordinary projects 
             across major cities in India, creating premium residential and commercial spaces.
@@ -72,7 +72,7 @@ export default function AboutUs() {
 
           <div className="space-y-4 text-gray-800 font-medium">
             {[
-              "Smart & Creative Designs",
+              "Smart & Creative Desizns",
               "100% Transparent Pricing",
               "Guaranteed On-time Delivery",
               "Premium Quality Finishes"
@@ -152,7 +152,7 @@ export default function AboutUs() {
                Our mission at UV Desizns is to create spaces that are fiercely functional, enduringly elegant, and fully future-ready. 
              </p>
              <p className="text-gray-600 leading-relaxed text-lg">
-               We blend raw creativity with modern technology to deliver stunning designs that enhance everyday living and professional working experiences, ensuring that the highest standards of architectural quality are met every single time.
+               We blend raw creativity with modern technology to deliver stunning Desizns that enhance everyday living and professional working experiences, ensuring that the highest standards of architectural quality are met every single time.
              </p>
            </motion.div>
            

@@ -11,7 +11,7 @@ const slides = [
   {
     img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80",
     tagline: "Corporate Excellence",
-    heading: "Designing Workspaces That Inspire Productivity",
+    heading: "Desizning Workspaces That Inspire Productivity",
     sub: "Modern corporate interiors crafted for performance and brand identity",
   },
   {
@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Designing{" "}
+              Desizning{" "}
               <span className="text-gold-gradient italic">Inspiring</span>
               <br />
               Spaces for Modern Living
