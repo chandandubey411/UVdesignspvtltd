@@ -19,7 +19,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="UV Desizns" className="h-10 grayscale invert mix-blend-screen" />
+            <img src="/logo.png" alt="UV Desizns" className="h-12 w-auto object-contain" />
           </div>
           <p className="text-white/60 text-sm leading-relaxed pr-6">
             We are a premier interior Desizn agency crafting inspiring spaces for modern living and corporate excellence. Over 10 years of trusted legacy.
