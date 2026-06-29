@@ -117,7 +117,35 @@ export default function AboutUs() {
               </div>
            </div>
         </motion.div>
+      </section>
 
+      {/* INTRODUCTORY VIDEO SECTION */}
+      <section className="py-20 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="text-yellow-600 font-bold tracking-widest uppercase text-sm mb-3 block">Introductory Video</span>
+            <h2 className="text-4xl font-serif font-bold text-[#0f2a3f] mb-6">
+              Experience UV Desizns
+            </h2>
+            <div className="w-16 h-1 bg-yellow-500 mx-auto mb-10 rounded-full" />
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-black aspect-video max-w-4xl mx-auto group">
+              <video
+                src="https://0lhw85i87r.ufs.sh/f/HMiUwEFgMn3UvUCj1ENIdetHiNpkocfv4XGlUhJ8YOSnRm5w"
+                autoPlay
+                muted
+                loop
+                controls
+                className="w-full h-full object-cover"
+                playsInline
+              />
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* MISSION SECTION */}
